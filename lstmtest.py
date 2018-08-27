@@ -21,7 +21,7 @@ from keras import regularizers
 with the input_step_size and output_size ,you can define the number of predict and previuos data when the model deployed
 '''
 # data = pd.read_csv('wktest-master/water-tilt.csv')  #load data
-data = pd.read_csv('My_Call_For_Code_Pro/water-tilt.csv')  #load data
+data = pd.read_csv('My_Call_For_Code_Pro-master/water-tilt.csv')  #load data
 input_step_size = 50  #data transform input shape 
 output_size = 10   #data transform output shap
 
