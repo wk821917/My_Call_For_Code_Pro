@@ -13,3 +13,6 @@ Following pictures introduce some information about the sensor:
 ### (1)Download the whole project
    `wget https://github.com/wk821917/My_Call_For_Code_Pro/archive/master.zip`
 
+### (2)Unzip the zipfile
+   `unzip -o -d ./ master.zip`
+
