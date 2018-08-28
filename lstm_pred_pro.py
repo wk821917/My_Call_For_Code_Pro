@@ -85,12 +85,12 @@ if len(zero_lst)>0:
 
 data.to_csv(os.path.join(output_result_folder,'input_data.csv'))
 
-f = open('wktest-master/lstm.json', 'r')  #load the json file 
+f = open('My_Call_For_Code_Pro-master/lstm.json', 'r')  #load the json file 
 json_string = f.read()
 f.close()
 
 model = model_from_json(json_string)  #define model by the json string
-model.load_weights('wktest-master/weight.hdf5')  #load weights for the model
+model.load_weights('My_Call_For_Code_Pro-master/weight.hdf5')  #load weights for the model
 # print(json_string)
 
 '''
