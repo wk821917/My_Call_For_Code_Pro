@@ -7,6 +7,5 @@ The sensor use embeded controler to monitor the parameters around the slope.
 It can return some information about soil and simple enviroment parameters around,for example moisture, tilt or temperature.
 Following pictures introduce some information about the sensor:
 ![avatar](Md_pic/E_shanjing1.png)
-![avatar](Md_pic/E_shanjing2.png)
-![avatar](Md_pic/E_shanjing3.png)
 ![avatar](Md_pic/E_shanjing4.png)
+![avatar](Md_pic/E_shanjing3.png)
