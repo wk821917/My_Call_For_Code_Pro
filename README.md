@@ -16,3 +16,6 @@ Following pictures introduce some information about the sensor:
 ### (2)Unzip the zipfile
    `unzip -o -d ./ master.zip`
 
+### (3)Run the Create_model script
+     1.You can run the 'Create_model.ipynb' by jupyter notebook with python3.5 kernal
+     2.You can
