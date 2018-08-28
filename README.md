@@ -31,8 +31,8 @@ Following pictures introduce some information about the sensor:
    The last_time.json means the Unix time when the data update,the program will update 'last_time.json'.
      
 #### (5)Download the file and plot picture
-      `cd ./download_script`
-      `python downloadfile.py`
+  `cd ./download_script`
+  `python downloadfile.py`
   Run the 'plot_pic.ipynb' by jupyter notebook
   The file will save in the dir named 'downloadfile'
   The picture will save in the dir named 'save_pic'
