@@ -17,25 +17,26 @@ Following pictures introduce some information about the sensor:
    `unzip -o -d ./ master.zip`
 
 #### (3)Run the Create_model script
-     1.You can find the scripts in the dir My_Call_For_Code_Pro-master
-     2.You can run the 'Create_model.ipynb' by jupyter notebook with python3.5 kernal 
-     3.You can also run the script by watson stdio service, the service provide python3.5 kernal 
-     4.The script not only create model and weight file but also made a test with a picture 
+     
+   1.You can find the scripts in the dir My_Call_For_Code_Pro-master
+   2.You can run the 'Create_model.ipynb' by jupyter notebook with python3.5 kernal 
+   3.You can also run the script by watson stdio service, the service provide python3.5 kernal 
+   4.The script not only create model and weight file but also made a test with a picture 
      named'pred_act.png' output,the model file and weight file will save in the cloud-object-storage.
      You can find the logfile and the picture in the current dir.
      
 #### (4)Run the predict script
-     `cd My_Call_For_Code_Pro-master/predict_script`
-     `python3 predict_script.py`
-     The last_time.json means the Unix time when the data update,the program will update 'last_time.json'.
+   `cd My_Call_For_Code_Pro-master/predict_script`
+   `python3 predict_script.py`
+   The last_time.json means the Unix time when the data update,the program will update 'last_time.json'.
      
 #### (5)Download the file and plot picture
-     `cd ./download_script`
-     `python downloadfile.py`
-     Run the 'plot_pic.ipynb' by jupyter notebook
-     The file will save in the dir named 'downloadfile'
-     The picture will save in the dir named 'save_pic'
+   `cd ./download_script`
+   `python downloadfile.py`
+   Run the 'plot_pic.ipynb' by jupyter notebook
+   The file will save in the dir named 'downloadfile'
+   The picture will save in the dir named 'save_pic'
     
 #### (6)Use scikit-learn to do cluster and classifier
-      Run the script in the 'My_Call_For_Code_Pro-master' dir named IBM_ML_KMeans_Test.ipynb and classifier_test.ipynb
-      The result will save in data_dir
+   Run the script in the 'My_Call_For_Code_Pro-master' dir named IBM_ML_KMeans_Test.ipynb and classifier_test.ipynb
+   The result will save in data_dir
