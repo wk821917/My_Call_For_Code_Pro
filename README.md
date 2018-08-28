@@ -11,5 +11,5 @@ Following pictures introduce some information about the sensor:
 
 ## 2.About The Software 
 ### (1)Download the whole project
-   'wget https://github.com/wk821917/My_Call_For_Code_Pro/archive/master.zip'
+   `wget https://github.com/wk821917/My_Call_For_Code_Pro/archive/master.zip`
 
