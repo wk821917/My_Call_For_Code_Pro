@@ -52,7 +52,7 @@ cos = ibm_boto3.resource ('s3',
                          config=Config(signature_version='oauth'),
                          endpoint_url=service_endpoint)
 
-url = 'https://github.com/wk821917/wktest/archive/master.zip'
+url = 'https://github.com/wk821917/My_Call_For_Code_Pro/archive/master.zip'
 
 client = WatsonMachineLearningAPIClient(wml_credentials)
 print('----------------client version:------------------')
@@ -81,14 +81,14 @@ urllib.request.urlretrieve(url, './master.zip')
 print('----------------download file from github completed-----------------')
 
 z = ZipFile('./master.zip')
-if not os.path.exists('./wktest-master'): os.mkdir('./wktest-master')
-z.extractall('./wktest-master')
+if not os.path.exists('./My_Call_For_Code_Pro-master'): os.mkdir('./My_Call_For_Code_Pro-master')
+z.extractall('./My_Call_For_Code_Pro-master')
 
-shutil.copyfile('./lstm.json','./wktest-master/wktest-master/lstm.json')
+shutil.copyfile('./lstm.json','./My_Call_For_Code_Pro-master/My_Call_For_Code_Pro-master/lstm.json')
 os.remove('./lstm.json')
-shutil.copyfile('./weight.hdf5','./wktest-master/wktest-master/weight.hdf5')
+shutil.copyfile('./weight.hdf5','./My_Call_For_Code_Pro-master/My_Call_For_Code_Pro-master/weight.hdf5')
 os.remove('./weight.hdf5')
-shutil.copyfile('./last_time.json','./wktest-master/wktest-master/last_time.json')
+shutil.copyfile('./last_time.json','./My_Call_For_Code_Pro-master/My_Call_For_Code_Pro-master/last_time.json')
 
 
 print('--------------ziping the files into the train path-----------')
@@ -101,7 +101,7 @@ def zip_ya(startdir,file_news):
             z.write(os.path.join(dirpath, filename),fpath+filename)
         print ('zip completed')
     z.close()
-zip_ya('./wktest-master','./wktest-master.zip')
+zip_ya('./My_Call_For_Code_Pro-master','./My_Call_For_Code_Pro-master.zip')
 
 metadata = {
     client.repository.DefinitionMetaNames.NAME              : "python-client-tutorial_training-definition",
@@ -110,10 +110,10 @@ metadata = {
     client.repository.DefinitionMetaNames.FRAMEWORK_VERSION : "1.5",
     client.repository.DefinitionMetaNames.RUNTIME_NAME      : "python",
     client.repository.DefinitionMetaNames.RUNTIME_VERSION   : "3.5",
-    client.repository.DefinitionMetaNames.EXECUTION_COMMAND : "python3 wktest-master/lstm_pred_pro.py"
+    client.repository.DefinitionMetaNames.EXECUTION_COMMAND : "python3 My_Call_For_Code_Pro-master/lstm_pred_pro.py"
 }
 
-definition_details = client.repository.store_definition( "wktest-master.zip", meta_props=metadata )
+definition_details = client.repository.store_definition( "My_Call_For_Code_Pro-master.zip", meta_props=metadata )
 definition_uid     = client.repository.get_definition_uid( definition_details )
 print( "definition_uid: ", definition_uid )
 
