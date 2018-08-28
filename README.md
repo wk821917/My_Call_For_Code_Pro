@@ -28,7 +28,7 @@ Following pictures introduce some information about the sensor:
 #### (4)Run the predict script
       cd My_Call_For_Code_Pro-master/predict_script
       python3 predict_script.py`
-   The script will connect with watson machine learning service and call the script named 'lstmtest.py' <br>
+   The script will connect with watson machine learning service and call the script named 'lstm_pred_pro.py' <br>
    The last_time.json means the Unix time when the data update,the program will update 'last_time.json'.
      
 #### (5)Download the file and plot picture
