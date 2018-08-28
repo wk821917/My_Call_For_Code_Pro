@@ -34,9 +34,9 @@ Following pictures introduce some information about the sensor:
 #### (5)Download the file and plot picture
       cd ./download_script
       python downloadfile.py
-  Run the 'plot_pic.ipynb' by jupyter notebook
-  The file will save in the dir named 'downloadfile'
-  The picture will save in the dir named 'save_pic'
+  Run the 'plot_pic.ipynb' by jupyter notebook <br>
+  The file will save in the dir named 'downloadfile' <br>
+  The picture will save in the dir named 'save_pic' <br>
     
 #### (6)Use scikit-learn to do cluster and classifier
    Run the script in the 'My_Call_For_Code_Pro-master' dir named IBM_ML_KMeans_Test.ipynb and classifier_test.ipynb
