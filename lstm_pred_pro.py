@@ -49,7 +49,7 @@ get data
 http = urllib3.PoolManager()
 res = http.request('GET','http://openapi.ecois.info/v2/poi/device/data?sn=18031400075227&nodes=1,2,3&params=82,182,185&begin=20180615&end=20180820',headers=headers)
 data1 = pd.DataFrame(json.loads(str(res.data,encoding = 'utf-8')))
-with open('wktest-master/last_time.json') as load_f:
+with open('My_Call_For_Code_Pro-master/last_time.json') as load_f:
     json_dict = json.load(load_f)
 print(json_dict)
 json_key = json_dict['last_time']
