@@ -17,5 +17,9 @@ Following pictures introduce some information about the sensor:
    `unzip -o -d ./ master.zip`
 
 ### (3)Run the Create_model script
-     1.You can run the 'Create_model.ipynb' by jupyter notebook with python3.5 kernal
-     2.You can
+     1.You can run the 'Create_model.ipynb' by jupyter notebook with python3.5 kernal<br>
+     2.You can also run the script by watson stdio service, the service provide python3.5 kernal<br>
+     3.The script not only create model and weight file but also made a test with a picture named'pred_act.png' output,<br>
+       the model file and weight file will save in the cloud-object-storage. You can find the logfile and the picture in the
+       current dir
+     
